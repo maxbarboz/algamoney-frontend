@@ -12,10 +12,11 @@ import { DropdownModule } from 'primeng/components/dropdown/dropdown';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 
 import { AppComponent } from './app.component';
-import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
+import { LancamentosPesquisaComponent } from './lancamento-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { LancamentoPessoaComponent } from './lancamento-pessoa/lancamento-pessoa.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     LancamentosPesquisaComponent,
     NavbarComponent,
     PessoasPesquisaComponent,
-    LancamentoCadastroComponent
+    LancamentoCadastroComponent,
+    LancamentoPessoaComponent
   ],
   imports: [
     BrowserModule,
