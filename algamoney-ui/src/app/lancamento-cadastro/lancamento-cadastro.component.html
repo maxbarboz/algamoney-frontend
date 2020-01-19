@@ -22,15 +22,23 @@
 
       <div class="ui-g-6 ui-md-9 ui-fluid">
         <label> Descrição </label>
-        <input pInputText type="text">
+        <input pInputText type="text" name="descricao" 
+          ngModel #descricao="ngModel" required minlength="5">
+
+        <app-message [control]="descricao" error="required" 
+          text="Informe uma descrição"></app-message>
+
+        <app-message [control]="descricao" error="minlength" 
+          text="Mínimo de {{ descricao.errors?.minlength?.requiredLength }} caracteres.">
+        </app-message>
+        
       </div>
 
       <div class="ui-g-6 ui-md-3 ui-fluid">
         <label> Valor </label>
-        <input pInputText type="text" placeholder="0,00" currencyMask
+        <input pInputText type="text" placeholder="0,00" currencyMask ngModel name="valor"
           [options]="{prefix: 'R$', thousands: '.', decimal: ',', allowNegative: false}">
       </div>
-
 
       <div class="ui-g-6 ui-md-6 ui-fluid">
         <label> Categoria </label>
