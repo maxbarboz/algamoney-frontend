@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
@@ -18,7 +19,8 @@ import { CommonModule } from '@angular/common';
     DataTableModule,
     TooltipModule,
     InputMaskModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   declarations: [
     PessoasPesquisaComponent,
